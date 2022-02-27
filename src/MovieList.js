@@ -72,12 +72,7 @@ const MovieList = () => {
                          <div  className="mv-loader">   
                             {
                                 shDiv.map((e,i)=>(
-                                    <motion.div className="mvl-grid" key={i}
-                                        custom={i}
-                                        variants={variants}
-                                        initial = "hidden"
-                                        animate="visible"
-                                    >
+                                    <motion.div className="mvl-grid" key={i}>
                                         <div className="mg-e"></div>    
                                     </motion.div> 
                                 ))
