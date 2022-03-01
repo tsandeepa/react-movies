@@ -24,8 +24,13 @@ export const MovieInfo = styled.div`
             bottom: 0;
             width: 100%;
             z-index: 1;
-            backdrop-filter: blur(58px);
+            backdrop-filter: blur(15px);
+            
+            
         }
+
+        
+
         position:absolute;
         width: 100%;
         img{
@@ -33,8 +38,21 @@ export const MovieInfo = styled.div`
             position: fixed;
             left: 0;
             z-index: 0;
+            animation: rotate 40s linear infinite alternate-reverse;
         }
-    }
+        @keyframes rotate {
+				from {
+					transform: scale(1);
+				}
+
+				to {
+					transform: scale(2);
+				}
+			}
+        }
+
+
+
     .md-container{
         max-width: 1100px;
         margin: 0 auto;
@@ -85,4 +103,6 @@ export const MovieInfo = styled.div`
             }
         }
     }
+
+    
 `

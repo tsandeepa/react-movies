@@ -44,7 +44,7 @@ const useFetch = (pge_no,schterm) => {
     const handlePrevious = () => {
         
 
-        if(PAGE_NO <= 1 || PAGE_NO ==2 && PAGE_NO !== 0 ){
+        if((PAGE_NO <= 1 || PAGE_NO === 2) && PAGE_NO !== 0 ){
              // just to make current movies disapier 
              setMovies(null)
             setFiltered(null)
@@ -65,11 +65,11 @@ const useFetch = (pge_no,schterm) => {
 
     }
 
-    const hadldeGenre = (id) => {
+    // const hadldeGenre = (id) => {
 
-                console.log("genre fucnt "+ id);
-                console.log(filtered);
-    }
+    //             console.log("genre fucnt "+ id);
+    //             console.log(filtered);
+    // }
 
     useEffect(()=>{
         setIsLoading(true)

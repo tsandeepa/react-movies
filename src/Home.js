@@ -1,11 +1,7 @@
-import Movie from "./Movie";
-import useFetch from "./useFetch";
-import MovieList from "./MovieList"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Link } from "react-router-dom";
+
 import Payment from "./Payment";
 import { Container } from "./components/styled/Container.styled";
-import { useTransition, animated, useSpring} from 'react-spring'
+import {  animated, useSpring} from 'react-spring'
 
 
 

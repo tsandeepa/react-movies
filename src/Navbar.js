@@ -1,13 +1,10 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { Nav } from "./components/styled/Nav.styled";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
-import useFetch from "./useFetch";
 import { motion } from "framer-motion"
-
-
 
 
 
@@ -65,13 +62,13 @@ const Navbar = ({themeChange}) => {
 
     }
 
-    const history = useHistory()
+    // const history = useHistory()
 
     
-    const handleSListClick = (id) =>{
-        console.log("logged"+id)
-        history.replace("movie/"+id)
-    }
+    // const handleSListClick = (id) =>{
+    //     console.log("logged"+id)
+    //     history.replace("movie/"+id)
+    // }
     
 
     const handleClose = () =>{

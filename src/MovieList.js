@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import Movie from "./Movie";
 import { ListLoader } from "./components/styled/MovielistLoader.styled";
-import { useTransition, animated, useSpring} from 'react-spring'
+import { animated, useSpring} from 'react-spring'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import {  faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 import { motion } from "framer-motion"
 
 
@@ -26,7 +26,7 @@ const variants = {
 const MovieList = () => {
     const icoRight = <FontAwesomeIcon icon={faAngleRight} />
     const icoLeft = <FontAwesomeIcon icon={faAngleLeft} />
-    const history = useHistory()
+    // const history = useHistory()
     let {pge_no} = useParams()
     // console.log(pge_no);
     // const handleGo = () =>{
@@ -38,7 +38,7 @@ const MovieList = () => {
     // }
 
 
-    const {movies,setActiveGenre,activeGenre,setFiltered,filtered,API_IFO,PAGE_NO,handleNext,handlePrevious,isLoading} = useFetch(pge_no);
+    const {movies,activeGenre,setFiltered,filtered,API_IFO,PAGE_NO,handleNext,handlePrevious,isLoading} = useFetch(pge_no);
     // const {movies,setActiveGenre,activeGenre,setFiltered} = useFetch();
     
 

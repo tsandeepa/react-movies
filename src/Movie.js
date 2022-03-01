@@ -1,5 +1,5 @@
 import { useHistory } from "react-router-dom";
-import { useTransition, animated, useSpring} from 'react-spring'
+import { animated, useSpring} from 'react-spring'
 import { OneMovie } from './components/styled/Movie.styled'
 import { motion } from "framer-motion"
 

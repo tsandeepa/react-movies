@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { useTransition, animated, useSpring, config} from 'react-spring'
+import { animated, useSpring, config} from 'react-spring'
 import { MovieInfo } from "./components/styled/MovieDetail.styled"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faStar } from '@fortawesome/free-solid-svg-icons'
@@ -39,7 +39,7 @@ const MovieDetails = () => {
     const [mvInfo,setMovieinfo] = useState(null);
     const [imgUrl, setImageurl] = useState(null);
     const [BdUrl, setBdUrl] = useState(null);
-    const [isLoading, setIsLoading] = useState(true)
+    // const [isLoading, setIsLoading] = useState(true)
 
 
     const history = useHistory()
@@ -53,7 +53,7 @@ const MovieDetails = () => {
             setImageurl(API_IFO.IMG_BASE+data.poster_path)
             setBdUrl(API_IFO.IMG_BASE+data.backdrop_path)
             console.log(data)
-            setIsLoading(false)
+            // setIsLoading(false)
         })
     },[id])
 
@@ -62,13 +62,13 @@ const MovieDetails = () => {
         console.log("backed");
         history.goBack()
     }
-    const Banner = ({ children }) => <div className="banner">{children}</div>;
+    // const Banner = ({ children }) => <div className="banner">{children}</div>;
 
     
 
     //movie poster spring animation
 
-    const configList = Object.keys(config);
+    // const configList = Object.keys(config);
     const ref = useRef(null);
     const [xys, set] = useState([0, 0, 1]);
     const preset = "molasses";
@@ -102,7 +102,40 @@ const MovieDetails = () => {
 
                 <div className="bd-fade">
                     <div className="bf-overlay"></div>
+
                     <img src={BdUrl} alt="" />
+                    <div id="particle-container">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
                 </div>
                 <div className="md-container" ref={ref}>
                     <animated.div 

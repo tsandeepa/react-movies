@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
@@ -9,18 +8,14 @@ import Navbar from "./Navbar";
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './components/styled/Global';
 import { lightTheme, darkTheme } from './components/styled/Theme.styled';
-import { useState } from 'react/cjs/react.development';
+import {  useState } from "react";
 
 
-const theme ={
-  bg : 'red', 
-  width : 1300,
-  color: '#000'
-}
+
 
 function App() {
 
-  const[theme, setTheme] = useState(darkTheme)
+  const[theme, setTheme] = useState(darkTheme);
 
 
 
