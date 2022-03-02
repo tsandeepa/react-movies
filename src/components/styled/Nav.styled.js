@@ -113,6 +113,7 @@ export const Nav = styled.div`
                 margin-top: 20px;
                 input{
                     flex: 1;
+                    font-size: 16px !important;
                 }
             }
             .sch-ovly{
