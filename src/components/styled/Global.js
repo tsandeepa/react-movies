@@ -40,11 +40,11 @@ const GlobalStyles = createGlobalStyle`
 .sch-movie-list{
   height: 100vh;
   width: 450px;
-  box-shadow: -65px -15px 24px #000000;
+  box-shadow: ${({theme})=> theme.schOverlayShadow};
   /* display: grid;
   grid-template-columns: repeat(10,1fr); */
   /* position: absolute; */
-  background: #000000f7;
+  background: ${({theme})=> theme.schOverlayBg};
     top: 0;
   bottom: 0;
   overflow-y: auto;

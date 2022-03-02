@@ -18,7 +18,9 @@ export const MovieInfo = styled.div`
             /* background: rgb(20,2,31); */
             /* background: linear-gradient(0deg, rgba(20,2,31,1) 0%, rgba(113,113,113,1) 100%); */
             /* background: linear-gradient(0deg,rgb(77 77 77 / 0%) 0%, rgb(0 0 0) 100%); */
-            background: linear-gradient(0deg,rgb(77 77 77 / 68%) 0%,rgb(0 0 0) 100%);
+            /* background: linear-gradient(0deg,rgb(77 77 77 / 68%) 0%,rgb(0 0 0) 100%);
+            background: linear-gradient(0deg,rgb(77 77 77 / 68%) 0%,rgb(255 255 255) 100%); */
+            background: ${({theme})=> theme.mvDetailOverlay};
 
             top: 0;
             bottom: 0;
@@ -103,6 +105,16 @@ export const MovieInfo = styled.div`
             }
         }
     }
+    @media only screen and (max-width: 1380px) and (min-width: 900px){
+        .md-poster{
+            max-width: 380px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
     @media only screen and (max-width: 690px){
         .md-container{
             display: block;

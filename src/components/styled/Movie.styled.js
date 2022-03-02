@@ -33,7 +33,7 @@ export const OneMovie = styled.div`
             font-size: 15px;
             text-align: left;
             font-weight: 300;
-            color: #b5b5b5;
+            color: ${({theme})=> theme.colorSecondary};
         }
         img{
             /* min-height: 348px; */

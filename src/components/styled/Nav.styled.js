@@ -28,8 +28,10 @@ export const Nav = styled.div`
                 display: flex;
                 gap: 20px;
                 a{
-                color: ${({theme})=> theme.color};
-                text-decoration: none;
+                    color: ${({theme})=> theme.color};
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 600;
                 }
             }
         }
@@ -77,12 +79,12 @@ export const Nav = styled.div`
                     align-items: center;
                     padding: 4px 20px 4px 4px;
                     p{
-                        color: #fff;
+                        color: ${({theme})=> theme.color};
                         margin-bottom: 5px;
                         font-size: 17px;
                     }
                     label{
-                        color: #8bafbd;
+                        color: ${({theme})=> theme.colorSecondary};
                         font-size: 16px;
                     }
                     img{
