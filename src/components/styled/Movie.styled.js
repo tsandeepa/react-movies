@@ -36,7 +36,7 @@ export const OneMovie = styled.div`
             color: #b5b5b5;
         }
         img{
-            min-height: 348px;
+            /* min-height: 348px; */
             object-fit: cover;
             
         }

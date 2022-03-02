@@ -86,4 +86,12 @@ export const Nav = styled.div`
             }
         }
 
+
+        @media only screen and (max-width: 380px){
+            display: block;
+
+            .tp-left h1{
+                font-size: 20px;
+            }
+        }
 `

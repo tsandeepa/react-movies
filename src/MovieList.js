@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import Movie from "./Movie";
 import { ListLoader } from "./components/styled/MovielistLoader.styled";
+import { ListGrid } from "./components/styled/MovieGrid.Styled";
 import { animated, useSpring} from 'react-spring'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
@@ -88,7 +89,7 @@ const MovieList = () => {
                     <button onClick={()=> setActiveGenre(28)}>Action</button>
                     
             </div> */}
-            <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(216px,1fr))',gridGap: '15px', padding:'0 15px'}}>
+            <ListGrid>
 
                 
                 {   filtered &&
@@ -107,7 +108,7 @@ const MovieList = () => {
                         
                     ))
                 }
-            </div>
+            </ListGrid>
             <div className="paginate-next">
             
 
