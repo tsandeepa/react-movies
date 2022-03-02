@@ -145,6 +145,7 @@ const MovieDetails = () => {
                         const rect = ref.current.getBoundingClientRect();
                         set(calc(e.clientX, e.clientY, rect));
                         }}
+                        className="md-poster"
                     >
                         <img className="mi-poster" src={imgUrl} alt="" />
                     </animated.div>

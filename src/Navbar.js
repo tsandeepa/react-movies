@@ -107,10 +107,14 @@ const Navbar = ({themeChange}) => {
                     <button onClick={()=> setActiveGenre(28)}>Action</button>
                     
                 </div> */}
+                <div className="nav-menu">
+                    <Link to="/">Home</Link>
+                    <Link to="/movieslist/1">All Movies</Link>
+                </div>
+                
             </div>
             <div className="tp-right">
-                <Link to="/">Home</Link>
-                <Link to="/movieslist/1">All Movies</Link>
+                
                 <input onChange={(e)=>handleSearch(e)} placeholder="search" type="text" />
                 <button className="btn-darkLight" onClick={themeChange}>{darkLight}</button>
 

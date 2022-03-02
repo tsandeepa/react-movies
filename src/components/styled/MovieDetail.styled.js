@@ -103,6 +103,23 @@ export const MovieInfo = styled.div`
             }
         }
     }
+    @media only screen and (max-width: 690px){
+        .md-container{
+            display: block;
+                .md-poster{
+                    .mi-poster{
+                        width: 67% !important;
 
+                    }
+                }
+                .md-right-info{
+                    padding: 12px;
+                    .btn-mi-close{
+                        top: 125px;
+                    }
+                }
+        }
+
+    }
     
 `

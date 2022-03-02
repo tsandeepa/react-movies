@@ -12,6 +12,15 @@ export const ListGrid = styled.div`
     }
     @media only screen and (max-width: 550px){
         grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        .mv-box{
+            h3{
+                font-size: 14px;
+                font-weight: 400;
+            }
+            p{
+                margin: 0;
+            }
+        }
     }
 
 `

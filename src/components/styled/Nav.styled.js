@@ -10,6 +10,7 @@ export const Nav = styled.div`
     backdrop-filter: blur(17px);
 
         display: flex;
+        gap: 20px;
         justify-content: space-between;
         align-items: center;
         padding: 15px;
@@ -18,9 +19,19 @@ export const Nav = styled.div`
         z-index: 2;
         .tp-left{
             display: flex;
+            flex: 1;
             align-items: center;
+            justify-content: space-between;
             gap: 20px;
             h1{margin:0}
+            .nav-menu{
+                display: flex;
+                gap: 20px;
+                a{
+                color: ${({theme})=> theme.color};
+                text-decoration: none;
+                }
+            }
         }
         .tp-right{
             display: flex;
@@ -31,10 +42,7 @@ export const Nav = styled.div`
                 padding: 10px 22px;
                 border-radius: 50px;
             }
-            a{
-                color: ${({theme})=> theme.color};
-                text-decoration: none;
-            }
+            
             .btn-darkLight{
                 width: 40px;
                 height: 40px;
@@ -87,11 +95,37 @@ export const Nav = styled.div`
         }
 
 
-        @media only screen and (max-width: 380px){
+        @media only screen and (max-width: 550px){
             display: block;
 
-            .tp-left h1{
-                font-size: 20px;
+            .tp-left {
+                h1{
+                    font-size: 20px;
+                }
+                .nav-menu{
+                    a{  
+                        font-size:14px;
+                    }
+                }
+            }
+            .tp-right{
+                justify-content: space-between;
+                margin-top: 20px;
+                input{
+                    flex: 1;
+                }
+            }
+            .sch-ovly{
+                top: 113px;
+                .sch-movie-list{
+                    width: 100%;
+                    box-shadow: none;
+                    .sch-scroll{
+                        .sch-close{
+                            top: 126px;
+                        }
+                    }
+                }
             }
         }
 `
