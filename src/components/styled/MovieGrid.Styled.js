@@ -10,7 +10,7 @@ export const ListGrid = styled.div`
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 
     }
-    @media only screen and (max-width: 380px){
+    @media only screen and (max-width: 550px){
         grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     }
 
