@@ -23,7 +23,14 @@ export const Nav = styled.div`
             align-items: center;
             justify-content: space-between;
             gap: 20px;
-            h1{margin:0}
+            h1{
+                margin:0;
+                font-size: 26px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+            }
             .nav-menu{
                 display: flex;
                 gap: 20px;

@@ -5,6 +5,7 @@ import { Nav } from "./components/styled/Nav.styled";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 import { motion } from "framer-motion"
+import { BiMoviePlay } from "react-icons/bi";
 
 
 
@@ -100,7 +101,7 @@ const Navbar = ({themeChange}) => {
 
         <Nav>
             <div className="tp-left">
-                <h1>Movie BRowse</h1>
+                <h1> <BiMoviePlay/> Movie BRowse</h1>
                 {/* <div>
                     <button onClick={()=> setActiveGenre(0)}>All</button>
                     <button onClick={()=> setActiveGenre(35)}>Commedy</button>
