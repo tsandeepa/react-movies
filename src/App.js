@@ -25,7 +25,7 @@ function App() {
 
   return (
 
-    <Router>
+    <Router basename="/movieslist/1">
       <div className="App">
       <ThemeProvider theme={theme}>
         <GlobalStyles/>
